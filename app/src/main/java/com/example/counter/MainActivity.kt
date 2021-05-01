@@ -24,10 +24,6 @@ class MainActivity : ComponentActivity() {
 
     @Composable
     fun Counter() {
-        val count = remember {
-            mutableStateOf(0)
-        }
-
         Column(
             modifier = Modifier
                 .fillMaxWidth()
@@ -35,8 +31,8 @@ class MainActivity : ComponentActivity() {
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Button1(onClick = { count.value++ }) {
-                Text("Clicked ${count.value.toString()} times!")
+            Button1(onClick = {}) {
+                Text("Clicked 12 times!")
             }
         }
 
